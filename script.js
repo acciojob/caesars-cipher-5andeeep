@@ -16,10 +16,10 @@ function rot13(encodedStr){
 	// let outputStr = "";
 	for(int i=0; i<incodedStr.length; i++){
 		if(lookup[encodedStr[i]] === undefined){
-			decodedArr += encodedStr[i];
+			decodedArr.push(encodedStr[i]);
 		}
 		else{
-			decodedArr += lookup[encodedStr[i]];
+			decodedArr.push(lookup[encodedStr[i]]);
 		}
 	}
 
